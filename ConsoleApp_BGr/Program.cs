@@ -125,3 +125,23 @@ Console.WriteLine($"\nThe Sum of even Natural Number upto {number} terms: {summa
 // Array
 // https://www.w3resource.com/csharp-exercises/array/index.php
 // 1. ... stores elements in an array and prints them.
+double[] ages = { 14, 11, 15, 15, 15, 16};
+double[] ages1 = new double[] { 14, 11, 15, 15, 15, 16};
+double[] ages2 = new double[6] { 14, 11, 15, 15, 15, 16};
+
+double[] ages3 = new double[10];
+ages3[1] = 11;
+ages3[2] = 13;
+ages3[3] = 14;
+ages3[4] = 14;
+ages3[6] = 15;
+
+foreach (double item in ages3)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine("-------------------");
+for (int i = 0; i < ages3.Length; i++)
+{
+    Console.WriteLine(ages3[i]);
+}
